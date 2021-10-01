@@ -13,7 +13,13 @@ const entity7 = new Entity(595, 85, "wall");
 const entity8 = new Entity(595, 170, "wall");
 const entity9 = new Entity(595, 255, "wall");
 const entity10 = new Entity(595, 340, "wall");
-const entity11 = new Entity(935, 0, "apple");
-const entity12 = new Entity(935, 85, "apple");
+const entity11 = new Entity(935, 255, "wall");
+const entity12 = new Entity(935, 85, "wall");
+const entity13 = new Entity(935, 170, "wall");
+const entity14 = new Entity(85, 170, "wall");
+const entity15 = new Entity(85, 85, "wall");
+const entity16 = new Entity(850, 255, "wall");
+const entity17 = new Entity(935, 0, "apple");
+
 pacman.mount();
 pacman.move();

@@ -62,6 +62,7 @@ body {
 .pacboy {
   &-active-light {
     background-image: url("../img/pacboy-active-light.png");
+    z-index: 2000;
   }
 
   &-active-medium {

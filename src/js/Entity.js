@@ -8,12 +8,12 @@ class Entity {
     // const pacman = document.querySelector(".entity");
     element.style.top = this.y + "px";
     element.style.left = this.x + "px";
-    if ((type = "wall")) {
+    if (type === "wall") {
       //   const wall = document.createElement("div");
       element.classList.add("entity--wall");
       element.classList.add("entity");
       stage.appendChild(element);
-    } else if ((type = "apple")) {
+    } else if (type === "apple") {
       element.classList.add("entity--apple");
       element.classList.add("entity");
       stage.appendChild(element);

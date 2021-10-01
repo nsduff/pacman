@@ -15,6 +15,11 @@ class Pacman {
     document.addEventListener("keydown", (event) => {
       //Keys to get pac to move in the right direction
       this.is_open = !this.is_open;
+      if (this.xpos == 850 && this.ypos == 0) {
+        setTimeout(alert("YOU WIN!"), 500);
+        const apple = document.querySelector(".entity--apple");
+        apple.style.display = "none";
+      }
       if (event.code == "ArrowRight" && this.xpos <= 850) {
         //move right
         this.pacman.style.backgroundPositionX = "0px";
