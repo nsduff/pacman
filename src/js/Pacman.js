@@ -14,7 +14,6 @@ class Pacman {
   move = () => {
     document.addEventListener("keydown", (event) => {
       //Keys to get pac to move in the right direction
-      console.log(this.ypos);
       this.is_open = !this.is_open;
       if (event.code == "ArrowRight" && this.xpos <= 850) {
         //move right
@@ -23,7 +22,6 @@ class Pacman {
         this.xpos += this.tile_size;
         console.log(this.xpos);
         this.pacman.style.left = this.xpos + "px";
-        console.log(this.is_open);
         if (this.is_open) {
           this.pacman.style.backgroundPositionX = "85px";
         } else {
@@ -34,7 +32,6 @@ class Pacman {
         this.pacman.style.backgroundPositionX = "0px";
         this.pacman.style.backgroundPositionY = "255px";
         this.xpos -= this.tile_size;
-        console.log(this.xpos);
         this.pacman.style.left = this.xpos + "px";
         if (this.is_open) {
           this.pacman.style.backgroundPositionX = "85px";
@@ -58,7 +55,6 @@ class Pacman {
         this.pacman.style.backgroundPositionX = "0px";
         this.pacman.style.backgroundPositionY = "85px";
         this.ypos -= this.tile_size;
-        console.log(this.ypos);
         this.pacman.style.top = this.ypos + "px";
         if (this.is_open) {
           this.pacman.style.backgroundPositionX = "85px";
